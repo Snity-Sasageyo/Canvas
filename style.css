@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+#toolbar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    z-index: 10;
+}
+
+#canvas {
+    display: block;
+    cursor: crosshair;
+
+}
+
+#canvas.panning{
+    cursor: grabbing;
+}
