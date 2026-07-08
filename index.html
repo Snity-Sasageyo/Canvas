@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canvas</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canvas</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="toolbar">
-        <input type="color" id="colorPicker" value="#000000">
-        <input type="range" id="linewidth" min="1" max="20" value="3">
-        <button id="clearBtn">Clear</button>
-    </div>
-    <canvas id="canvas"></canvas>
-    <script src="script.js"></script>
+<div id="toolbar">
+    <button id="penTool" class="active">Pen</button>
+    <button id="eraserTool">Eraser</button>
+    <input type="color" id="colorPicker" value="#1e1e1e">
+    <input type="range" id="lineWidth" min="1" max="30" value="4">
+    <button id="undoBtn">Undo</button>
+    <button id="redoBtn">Redo</button>
+    <button id="exportBtn">Export</button>
+    <button id="clearBtn">Clear</button>
+    <span id="coords">X: 0, Y: 0</span>
+</div>
+<canvas id="canvas"></canvas>
+<script src="script.js"></script>
 </body>
 </html>
